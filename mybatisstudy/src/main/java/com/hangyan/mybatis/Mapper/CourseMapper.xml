@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hangyan.mybatis.Mapper.CourseMapper">
+    <select id="SelectAll" resultType="com.hangyan.mybatis.model.Course">
+        select * from Course
+    </select>
+
+    <insert id="insert" parameterType="com.hangyan.mybatis.Mapper.CourseMapper">
+        insert  into Course(c_id,c_name,t_id)
+        values (#{c_id},#{c_name},#{t_id})
+    </insert>
+
+    <update id="update" parameterType="com.hangyan.mybatis.Mapper.CourseMapper">
+        UPDATE course set(c_id,c_name,t_id)
+        values (#{c_id},#{c_name},#{t_id})
+    </update>
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete  from  course
+        where id=#{id}
+    </delete>
+</mapper>
