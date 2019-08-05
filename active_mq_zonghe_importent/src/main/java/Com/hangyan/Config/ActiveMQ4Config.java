@@ -13,6 +13,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.core.JmsTemplate;
+/*
+AUTO_ACKNOWLEDGE = 1    自动确认
+CLIENT_ACKNOWLEDGE = 2    客户端手动确认   
+DUPS_OK_ACKNOWLEDGE = 3    自动批量确认
+SESSION_TRANSACTED = 0    事务提交并确认
+INDIVIDUAL_ACKNOWLEDGE = 4    单条消息确认 activemq 独有
+
+ */
 
 @EnableJms
 @Configuration
@@ -26,6 +34,7 @@ public class ActiveMQ4Config {
         return new ActiveMQQueue(myQueue);
     }
 
+    //设置重新发送的参数
     @Bean
     public RedeliveryPolicy redeliveryPolicy(){
         RedeliveryPolicy  redeliveryPolicy=   new RedeliveryPolicy();
@@ -43,13 +52,11 @@ public class ActiveMQ4Config {
         redeliveryPolicy.setMaximumRedeliveryDelay(-1);
         return redeliveryPolicy;
     }
+    //在ActiveMQConnectionFactory里设置延时发送的参数
     @Bean
     public ActiveMQConnectionFactory activeMQConnectionFactory (@Value("${spring.activemq.broker-url}")String url,RedeliveryPolicy redeliveryPolicy){
         ActiveMQConnectionFactory activeMQConnectionFactory =
-                new ActiveMQConnectionFactory(
-                        "admin",
-                        "admin",
-                        url);
+                new ActiveMQConnectionFactory("admin", "admin", url);
         activeMQConnectionFactory.setRedeliveryPolicy(redeliveryPolicy);
         return activeMQConnectionFactory;
     }
@@ -67,8 +74,7 @@ public class ActiveMQ4Config {
     //定义一个消息监听器连接工厂，这里定义的是点对点模式的监听器连接工厂
     @Bean(name = "jmsQueueListener")
     public DefaultJmsListenerContainerFactory jmsQueueListenerContainerFactory(ActiveMQConnectionFactory activeMQConnectionFactory) {
-        DefaultJmsListenerContainerFactory factory =
-                new DefaultJmsListenerContainerFactory();
+        DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
         factory.setConnectionFactory(activeMQConnectionFactory);
         //设置连接数
         factory.setConcurrency("1-10");
