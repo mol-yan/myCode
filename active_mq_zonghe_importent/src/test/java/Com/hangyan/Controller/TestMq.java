@@ -16,8 +16,8 @@ public class TestMq {
     @Test
     public void testActivemq(){
         producer.sendMessage("look this is a message==cmcc==");
-        while(true){}
-    }
+
+}
 
 
 }

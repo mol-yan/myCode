@@ -3,12 +3,13 @@ package Com.hangyan.Controller;
 
 import javax.jms.Destination;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
-
+@Slf4j
 @Component
 public class Producer {
 
@@ -34,6 +35,7 @@ public class Producer {
     public void sendMessage(final String message) {
         System.out.println(jmsTemplate.getDeliveryMode());
         jmsTemplate.convertAndSend(queue,message);
+        log.info("发送消息{}",message);
     }
 
 }
