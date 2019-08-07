@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--注意，该文件名一定要与接口文件一致-->
+<!--namespace的包路径是接口的包全路径，表明是对他做的一次写法-->
+<mapper namespace="com.hangyan.redis_study.Mapper.StudentInfoMapper">
+<!--    id与select中的resultMap属性连接，注意不是resultType，type表示返回的是哪一个类，然后下面按照那个类写result分支 -->
+    <resultMap id="map1" type="com.hangyan.redis_study.model.StudentInfo">
+<!--   column是数据库中的表字段，  property是type那个类中非对象成员变量名，jdbcType为数据库中的字段类型-->
+        <result column="s_id" property="s_id" jdbcType="VARCHAR"></result>
+        <result column="s_sex" property="s_sex" jdbcType="VARCHAR"></result>
+        <result column="s_name" property="s_name" jdbcType="VARCHAR"></result>
+        <result column="s_birth" property="s_birth" jdbcType="VARCHAR"></result>
+
+<!--     collection是对象集合的写法，association 是注入对象的写法（javaType写包全路径），ofType是那个对象集合的一个元素的类
+property是那个类的成员变量，column写了一个别名column_s_id，因为连表查询有重复字段  -->
+        <collection property="scores" ofType="com.hangyan.redis_study.model.Score">
+            <result column="column_s_id" property="s_id" jdbcType="VARCHAR"></result>
+            <result column="column_c_id" property="c_id" jdbcType="VARCHAR"></result>
+            <result column="column_score" property="score" jdbcType="FLOAT"></result>
+        </collection>
+<!--        另外一个对象集合，方法同上-->
+        <collection property="course" ofType="com.hangyan.redis_study.model.Course">
+            <result column="column_t_id" property="t_id" jdbcType="VARCHAR"></result>
+            <result column="column_course_c_id" property="c_id" jdbcType="VARCHAR"></result>
+            <result column="column_c_name" property="c_name" jdbcType="VARCHAR"></result>
+        </collection>
+    </resultMap>
+    
+<!--是resultMap，不是resultType,观察左连接写法以及别名，别名是之前的重复字段的别名，不起别名就查不出结果-->
+    <select id="SelectAll" resultMap="map1">
+        SELECT st.*, sc.s_score column_score,cou.c_name column_c_name
+--         SELECT st.*, sc.s_score ,cou.c_name
+        FROM student st
+        LEFT JOIN score sc
+        ON  st.s_id =sc.s_id
+        LEFT JOIN course cou
+        ON  cou.c_id=sc.c_id
+        ORDER BY st.s_id
+    </select>
+</mapper>

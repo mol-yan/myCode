@@ -11,7 +11,6 @@ import org.springframework.cache.annotation.EnableCaching;
 @MapperScan("com.hangyan.redis_study.Mapper")
 @SpringBootApplication
 @EnableCaching
-
 public class RedisStudyApplication {
     public static void main(String[] args) {
         SpringApplication.run(RedisStudyApplication.class,args);

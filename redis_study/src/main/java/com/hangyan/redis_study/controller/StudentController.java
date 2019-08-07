@@ -67,14 +67,14 @@ public class StudentController {
     @ResponseBody
     public void addStudentInfo()
     {
-        String id ="1110";
+        String id ="112340";
         Student student =new Student();
-        student.setS_birth("1994-12-24");
+        student.setS_birth("1984-12-22");
         student.setS_id(id);
-        student.setS_name("苗哥");
+        student.setS_name("非哥");
         student.setS_sex("男");
         studentMapper.add(student);
-        redisService.set("s_"+id,student);
+        redisService.set("s_"+id,JSON.toJSON(student));
         System.out.println("数据库和Redis已经完全录入");
     }
 

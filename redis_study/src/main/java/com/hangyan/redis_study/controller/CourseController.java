@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
-//需要开启事务？
 @CacheConfig(cacheNames = "CourseController")
 @RestController
 public class CourseController {
@@ -30,16 +29,18 @@ public class CourseController {
         return this.courseMapper.SelectAll();
     }
 
-    @Cacheable(value = "getCourseInfoCache",key="'c_'+#p0")
+    @Cacheable(value = "getCourseInfoCache",keyGenerator = "simpleKeyGenerator")
     @RequestMapping("/course/{id}")
     public Course getCourseInfoCache(@PathVariable String id) {
-        id="c_"+id;
         System.out.println("从数据库中获取"+id);
         return  this.courseMapper.getCourseInfo(id);
 
     }
+
+
+
     @RequestMapping("/course_/{c_id}/{t_id}/{c_name}")
-    @CachePut(key ="'c_'+#p0")
+    @CachePut(key ="p0")
     public void insetCourse(@PathVariable String c_id,@PathVariable String t_id,@PathVariable String c_name){
         courseMapper.Insert(c_id,t_id,c_name);
         System.out.println("注入数据库成功");
@@ -57,7 +58,7 @@ public class CourseController {
 //
 //    }
     @RequestMapping("/put/{c_id}/{t_id}")
-    @CachePut(key ="'c_'+#p0")
+    @CachePut(key ="#p0")
     public  void update(@PathVariable String c_id,@PathVariable String t_id)
     {
         courseMapper.update(c_id,t_id);

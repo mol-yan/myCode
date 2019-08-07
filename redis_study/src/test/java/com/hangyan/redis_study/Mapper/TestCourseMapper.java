@@ -4,6 +4,8 @@ package com.hangyan.redis_study.Mapper;
 import com.hangyan.redis_study.model.Course;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -20,6 +22,9 @@ public class TestCourseMapper {
     @Test
     public void testSelect()
     {
+
+        Logger logger = LoggerFactory.getLogger(TestCourseMapper.class);
+        logger.info("aaaaa");
         List<Course> courses =courseMapper.SelectAll();
         for (Course c: courses)
         {
