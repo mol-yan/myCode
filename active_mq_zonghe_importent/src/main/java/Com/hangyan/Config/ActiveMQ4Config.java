@@ -30,7 +30,7 @@ public class ActiveMQ4Config {
     private String myQueue;
 
     @Bean
-    public Queue queue(){
+    public ActiveMQQueue queue(){
         return new ActiveMQQueue(myQueue);
     }
 
@@ -61,8 +61,8 @@ public class ActiveMQ4Config {
         return activeMQConnectionFactory;
     }
 
-    @Bean
-    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory,Queue queue){
+    @Bean//这里是p2p的，因为是queue,在这边可以改成topic
+    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory,ActiveMQQueue queue){
         JmsTemplate jmsTemplate=new JmsTemplate();
         jmsTemplate.setDeliveryMode(2);//进行持久化配置 1表示非持久化，2表示持久化
         jmsTemplate.setConnectionFactory(activeMQConnectionFactory);
@@ -74,6 +74,7 @@ public class ActiveMQ4Config {
     //定义一个消息监听器连接工厂，这里定义的是点对点模式的监听器连接工厂
     @Bean(name = "jmsQueueListener")
     public DefaultJmsListenerContainerFactory jmsQueueListenerContainerFactory(ActiveMQConnectionFactory activeMQConnectionFactory) {
+        //DefaultJmsListenerContainerFactory是实现手动签收ack的一种模式
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
         factory.setConnectionFactory(activeMQConnectionFactory);
         //设置连接数

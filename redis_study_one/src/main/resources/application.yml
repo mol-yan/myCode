@@ -11,3 +11,6 @@ spring:
     url: jdbc:mysql://localhost:3306/pritise?characterEncoding=utf-8
 
 
+logging:
+  file: mylogs.log
+  path: D:/SuperMapDataLogs/mylogs
