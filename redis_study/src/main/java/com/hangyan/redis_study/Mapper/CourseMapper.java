@@ -18,5 +18,7 @@ public interface CourseMapper {
     public void update(@Param(value = "c_id") String c_id,@Param(value = "t_id") String  t_id);
     public Course getCourseInfo(String id);
 
+    public List<Course> SelectById(Course course);
+
 
 }
