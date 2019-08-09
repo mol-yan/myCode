@@ -20,7 +20,7 @@ public class TestStudentInfoMapper {
     StudentInfoMapper studentInfoMapper;
 
     @Test
-    public  void testStudentInfo(){
+    public void testStudentInfo(){
         List<StudentInfo> list =studentInfoMapper.SelectAll();
         for (StudentInfo s: list) {
             System.out.println(JSON.toJSON(s));

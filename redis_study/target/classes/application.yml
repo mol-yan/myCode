@@ -15,3 +15,6 @@ spring:
 #
 
 
+mybatis:
+  mapper-locations:
+    - classpath*:com/hangyan/redis_study/Mapper/**/*.xml

@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="38524d64-72dc-433e-8d8d-ae7383c7fa7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/CourseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/SInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/redis_study/Mapper/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/redis_study/Mapper/StudentInfoMapper.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,16 +29,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/SInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="627">
               <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
@@ -45,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="85">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,10 +50,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="921">
+              <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+              <folding>
+                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="209">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
@@ -118,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/RedisStudyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="161">
+              <caret line="9" column="69" selection-start-line="9" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,6 +151,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -146,6 +164,7 @@
       <find>cache</find>
       <find>redis</find>
       <find>SelectStudentInfo</find>
+      <find>data-jpa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,20 +189,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/RedisStudyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/TestStudentInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/StudentInfo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfo.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/XmlMapper/package.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/RedisStudyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -211,18 +232,12 @@
           <item name="redis_study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="redis_study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-579" />
-    <option name="y" value="9" />
+    <option name="x" value="39" />
     <option name="width" value="1722" />
     <option name="height" value="978" />
   </component>
@@ -282,15 +297,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="redis_study" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis_study_joint" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis_study" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="redis_study" type="462c0819:PsiDirectoryNode" />
               <item name="Mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,7 +306,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="redis_study" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="XmlMapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redis_study_joint" type="b2602c69:ProjectViewProjectNode" />
@@ -354,6 +361,13 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\myGithubCode\redis_study\src\main\java\com\hangyan\redis_study\Mapper\XmlMapper" />
+      <recent name="F:\myGithubCode\redis_study\src\main\java\com\hangyan\redis_study\Mapper" />
+      <recent name="F:\myGithubCode\redis_study\src\main\java\com\hangyan\redis_study\Mapper\xmlMapper" />
+      <recent name="F:\myGithubCode\redis_study\src\main\resources\XmlMapper" />
+      <recent name="F:\myGithubCode\redis_study\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hangyan.redis_study.Mapper" />
     </key>
@@ -373,12 +387,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCourseMapper.testSelect">
+  <component name="RunManager" selected="JUnit.TestStudentInfoMapper">
     <configuration name="TestCourseMapper.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="redis_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.*" />
+          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.StudentInfoMapper" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -394,7 +408,7 @@
       <module name="redis_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.*" />
+          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.StudentInfoMapper" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -424,7 +438,7 @@
       <module name="redis_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.*" />
+          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.StudentInfoMapper" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,7 +454,7 @@
       <module name="redis_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.*" />
+          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.StudentInfoMapper" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -456,7 +470,7 @@
       <module name="redis_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.*" />
+          <option name="PATTERN" value="com.hangyan.redis_study.Mapper.StudentInfoMapper" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -514,11 +528,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisStudyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="redis_study" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hangyan.redis_study.RedisStudyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCourseMapper.testSelect" />
         <item itemvalue="JUnit.TestStudentInfoMapper" />
         <item itemvalue="JUnit.TestStudentInfoMapper.testStudentInfo" />
+        <item itemvalue="JUnit.TestCourseMapper.testSelect" />
         <item itemvalue="JUnit.TestStudentMapper" />
         <item itemvalue="JUnit.TestStudentInfoMapper" />
       </list>
@@ -557,50 +578,51 @@
       <workItem from="1565179454088" duration="44000" />
       <workItem from="1565179520834" duration="44000" />
       <workItem from="1565228197059" duration="23000" />
-      <workItem from="1565232126866" duration="49000" />
+      <workItem from="1565232126866" duration="708000" />
+      <workItem from="1565313468913" duration="169000" />
+      <workItem from="1565334029616" duration="1399000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 12m 35s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 11m 19s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 15m 32s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 13m 21s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 30m 42s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 13m 50s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 33m 08s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 15m 40s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 36m 40s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 16m 09s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 50m 24s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 17m 19s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper_testStudentInfo - 2019.08.07 at 19h 51m 08s.xml">
+    <history-entry file="TestStudentInfoMapper_testStudentInfo - 2019.08.09 at 15h 21m 38s.xml">
       <configuration name="TestStudentInfoMapper.testStudentInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 19h 54m 20s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 22m 04s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 20h 04m 40s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 22m 43s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentInfoMapper - 2019.08.07 at 20h 05m 43s.xml">
+    <history-entry file="TestStudentInfoMapper - 2019.08.09 at 15h 23m 10s.xml">
       <configuration name="TestStudentInfoMapper" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83691000" />
+    <option name="totallyTimeSpent" value="85918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4974093" visible="true" weight="0.27324173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4974093" visible="true" weight="0.27728376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -610,7 +632,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" weight="0.330373" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" visible="true" weight="0.42984015" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4893617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -866,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/com/hangyan/redis_study/Mapper/StudentInfoMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -886,17 +901,6 @@
     <entry file="file://$PROJECT_DIR$/target/classes/com/hangyan/redis_study/Mapper/CourseMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -905,16 +909,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CourseMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/CourseMapper.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/StudentInfo.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/TestStudentInfoMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/CourseMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Score.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -970,10 +967,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/StudentInfoMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/SInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/Mapper/XmlMapper/CourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,10 +1032,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/XmlMapper/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/RedisStudyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="161">
+          <caret line="9" column="69" selection-start-line="9" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1016,35 +1051,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestStudentInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="85">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hangyan/redis_study/Mapper/TestCourseMapper.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="921">
+          <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/redis_study/model/Course.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="157">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
         </state>
       </provider>
     </entry>
