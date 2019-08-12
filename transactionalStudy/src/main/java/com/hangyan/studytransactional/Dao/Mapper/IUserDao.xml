@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangyan.studytransactional.Dao.UserDao">
+    
+    <update id="subMoney">
+        update user
+        set salary=salary-#{money,jdbcType=DOUBLE}
+        where userid=#{id,jdbcType=VARCHAR}
+    </update>
+
+    <update id="addMoney">
+        update  USER
+        set salary=salary+#{money,jdbcType=DOUBLE}
+        where userid=#{id,jdbcType=VARCHAR}
+    </update>
+</mapper>
