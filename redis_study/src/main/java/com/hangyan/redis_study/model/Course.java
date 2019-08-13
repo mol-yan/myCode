@@ -7,6 +7,8 @@ public class Course implements Serializable {
     String c_id;
     String c_name;
     String t_id;
+    List<String> c_ids;
+
 
     public List<String> getC_ids() {
         return c_ids;
@@ -16,7 +18,7 @@ public class Course implements Serializable {
         this.c_ids = c_ids;
     }
 
-    List<String> c_ids;
+
 
     public String getC_id() {
         return c_id;
