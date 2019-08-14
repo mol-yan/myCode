@@ -17,7 +17,7 @@ public interface CourseMapper {
     public List<Course> SelectAll();
     public void update(@Param(value = "c_id") String c_id,@Param(value = "t_id") String  t_id);
     public Course getCourseInfo(String id);
-
+    //只用到了对象里的一个成员变量c_ids
     public List<Course> SelectById(Course course);
 
 

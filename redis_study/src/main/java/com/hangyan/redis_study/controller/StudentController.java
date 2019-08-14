@@ -51,7 +51,7 @@ public class StudentController {
                 System.out.println(studentInfo_DB.getS_name()+studentInfo_DB.getS_birth());
                 System.out.println("即将存入redis中：" + id);
 //                redisService.set(id, JSON.toJSON(studentInfo_DB));
-                redisService.set("s_"+id, studentInfo_DB);
+                redisService.set("s_"+id, JSON.toJSON(studentInfo_DB));
 
                 System.out.println("成功存入redis中：" + id);
                 return studentInfo_DB;
@@ -88,7 +88,8 @@ public class StudentController {
         student.setS_birth("1983-02-03");
         studentMapper.update(new_birth,id);
         redisService.remove("s_"+id);
-        redisService.set("s_"+id,student);
+        redisService.set("s_"+id,JSON.toJSON(student));
+
         Student student_new = this.getStudentInfoCache(id);
         return student_new;
     }

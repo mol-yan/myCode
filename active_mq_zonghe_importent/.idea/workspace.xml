@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84841b4d-e7a1-43de-9e45-9ec72812d397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_study_one/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study_one/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_nio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_nio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis_study/src/main/java/com/hangyan/redis_study/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study/src/main/java/com/hangyan/redis_study/controller/CourseController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="342">
               <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="114">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -79,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="114">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
@@ -123,11 +121,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Com/hangyan/Config/Map.java" />
         <option value="$PROJECT_DIR$/src/test/java/Com/hangyan/Controller.java" />
         <option value="$PROJECT_DIR$/src/test/java/Com/hangyan/TestMq.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/test/java/Com/hangyan/Controller/TestMq.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Producer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -155,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -275,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestMq (2)">
+  <component name="RunManager" selected="Spring Boot.Map (1)">
     <configuration name="TestMq (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="active_mq_zonghe_importent" />
       <extension name="coverage">
@@ -306,21 +304,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="active_mq_zonghe_importent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Com.hangyan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Com.hangyan" />
-      <option name="MAIN_CLASS_NAME" value="Com.hangyan.TestMq" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestMq.testActivemq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="active_mq_zonghe_importent" />
       <extension name="coverage">
@@ -333,6 +316,19 @@
       <option name="MAIN_CLASS_NAME" value="Com.hangyan.Controller.TestMq" />
       <option name="METHOD_NAME" value="testActivemq" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springActiveMq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Com.hangyan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Com.hangyan.Map" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -352,11 +348,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Map (1)" />
         <item itemvalue="JUnit.TestMq (2)" />
         <item itemvalue="JUnit.TestMq (1)" />
         <item itemvalue="Spring Boot.Map" />
         <item itemvalue="JUnit.TestMq.testActivemq" />
-        <item itemvalue="JUnit.TestMq" />
       </list>
     </recent_temporary>
   </component>
@@ -374,6 +370,7 @@
       <workItem from="1565075342188" duration="470000" />
       <workItem from="1565075885834" duration="998000" />
       <workItem from="1565077787429" duration="833000" />
+      <workItem from="1565697998489" duration="314000" />
     </task>
     <servers />
   </component>
@@ -410,7 +407,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7756000" />
+    <option name="totallyTimeSpent" value="8070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -426,7 +423,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39609236" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27175844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,14 +481,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="209">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,40 +511,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Producer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="271">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Controller/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>

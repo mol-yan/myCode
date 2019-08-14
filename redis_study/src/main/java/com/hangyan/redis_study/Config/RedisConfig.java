@@ -27,13 +27,14 @@ public class RedisConfig {
         return (o, method, objects) -> {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(o.getClass().getSimpleName());
-            stringBuilder.append(".");
-            stringBuilder.append(method.getName());
-            stringBuilder.append("[");
-            for (Object obj : objects) {
-                stringBuilder.append(obj.toString());
-            }
-            stringBuilder.append("]");
+            //如果在此处加入类的名字作为redis的一个名空间，会导致cacheput和cacheable同一个id不一样，这样会再创建一个，会造成冗余
+//            stringBuilder.append(".");
+//            stringBuilder.append(method.getName());
+//            stringBuilder.append("[");
+//            for (Object obj : objects) {
+//                stringBuilder.append(obj.toString());
+//            }
+//            stringBuilder.append("]");
 
             return stringBuilder.toString();
         };
@@ -51,9 +52,9 @@ public class RedisConfig {
     private Map<String, RedisCacheConfiguration> getRedisCacheConfigurationMap() {
         Map<String, RedisCacheConfiguration> redisCacheConfigurationMap = new HashMap<>();
 //        redisCacheConfigurationMap.put("UserInfoList", this.getRedisCacheConfigurationWithTtl(3000));
-        redisCacheConfigurationMap.put("CourseController", this.getRedisCacheConfigurationWithTtl(180));
+        redisCacheConfigurationMap.put("CourseController", this.getRedisCacheConfigurationWithTtl(1800));
         //Key要自己定义好，然后在此处写哪些Key想要被设置，时间是多少
-        redisCacheConfigurationMap.put("getCourseInfoCache", this.getRedisCacheConfigurationWithTtl(18));
+        redisCacheConfigurationMap.put("getCourseInfoCache", this.getRedisCacheConfigurationWithTtl(180));
 
 
         return redisCacheConfigurationMap;

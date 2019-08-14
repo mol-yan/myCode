@@ -1,3 +1,4 @@
+#tcp://172.28.19.97:61616
 spring:
   activemq:
     broker-url: nio://localhost:61608
