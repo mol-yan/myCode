@@ -1,0 +1,13 @@
+
+#设置彩色日志
+spring:
+  output:
+    ansi:
+      enabled: always
+logging:
+  file: E:/logg.log
+  level:
+    root: INFO
+    com.hangyan.LogStudy.Controller: Debug
+
+
