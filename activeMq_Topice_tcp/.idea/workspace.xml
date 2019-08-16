@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="004045dd-af0b-455b-a33e-f9ff3ef9ec3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Config/MQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config/ConfigBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config/Controller/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/Controller/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config/Controller/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/Controller/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/ConfigBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/Controller/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/Controller/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/Controller/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/Controller/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Controller/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Controller/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/test/java/Com/hangyan/Controller/TestMq.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/test/java/Com/hangyan/Controller/TestMq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Config/ActiveMQ4Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Config/ActiveMQ4Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Controller/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Controller/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/test-classes/Com/hangyan/Controller/TestMq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/test-classes/Com/hangyan/Controller/TestMq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springActiveMq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springActiveMq/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springmq/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springmq/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springmq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springmq/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="004045dd-af0b-455b-a33e-f9ff3ef9ec3b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Config/testSend.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -67,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Config/Controller/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="207">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1022#1314#0" expanded="true" />
@@ -183,7 +155,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
     <option name="y" value="40" />
     <option name="width" value="1722" />
@@ -420,7 +392,7 @@
       <workItem from="1565784737124" duration="8093000" />
       <workItem from="1565861425686" duration="703000" />
       <workItem from="1565862678173" duration="3587000" />
-      <workItem from="1565868229020" duration="13173000" />
+      <workItem from="1565868229020" duration="13255000" />
     </task>
     <servers />
   </component>
@@ -457,13 +429,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40834000" />
+    <option name="totallyTimeSpent" value="40916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23201293" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23201293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -473,7 +445,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28419182" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26820603" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44227353" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -657,26 +629,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Controller/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1022#1314#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1571#1863#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Config/testSend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Controller/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1022#1314#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1571#1863#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
           </folding>
         </state>
       </provider>

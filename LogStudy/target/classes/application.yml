@@ -1,3 +1,5 @@
+
+#设置彩色日志
 spring:
   output:
     ansi:
