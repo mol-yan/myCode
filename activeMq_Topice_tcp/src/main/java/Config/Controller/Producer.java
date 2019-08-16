@@ -1,24 +1,73 @@
 package Config.Controller;
 
+import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+import javax.jms.*;
+import java.io.Serializable;
+
 @Component
 public class Producer {
-    @Autowired
+    //config文件中类型是JmsTemplate，但是JmsMessagingTemplate一样能自动装配到
+
+    @Resource
     private JmsMessagingTemplate jmsMessagingTemplate;
 
-    @Autowired//a类里面注入了b类，原来都是有b这个类，然后通过构造函数绑定，现在ActiveMQTopic没有这个自己
-    //写的类，所以用了@Bean方法绑定。
-    private ActiveMQTopic activeMQTopic;
+    @Resource
+    private ActiveMQQueue activeMQQueue;
+    @Resource
+    private JmsTemplate jmsTemplate;
+    //可以自定义一个map，session.createMapMessage(map)
+    public void sendMapMessage() {
 
-    @Scheduled(fixedDelay = 3000)
-    public void send_Topic()
+        jmsTemplate.send(activeMQQueue,new MessageCreator() {
+
+            public Message createMessage(Session session) throws JMSException {
+
+                MapMessage mapMessage = session.createMapMessage();
+                mapMessage.setString("name:","mol");
+                mapMessage.setInt("age:",18);
+                mapMessage.setDouble("score",98.73);
+                mapMessage.setJMSType("MapMessage");
+                return mapMessage;
+            }
+        });
+        System.out.println("send success");
+
+    }
+
+
+    public void sendTextMessage(final String msg) {
+        System.out.println("jmsTemplate model:");
+        System.out.println(jmsTemplate.getDeliveryMode());
+        jmsTemplate.send(activeMQQueue,new MessageCreator() {
+
+            public Message createMessage(Session session) throws JMSException {
+
+                TextMessage textMessage= session.createTextMessage(msg);
+                textMessage.setJMSType("TextMessage");
+                return textMessage;
+            }
+        });
+        System.out.println("send success");
+
+    }
+
+
+    //如果和bp通信，如何create 不同类型的message？
+    //    @Scheduled(fixedDelay = 3000)
+    public void send_map_jmsMessagingTemplate()
     {
-        jmsMessagingTemplate.convertAndSend(activeMQTopic,"aaaatopic");
+
+        jmsMessagingTemplate.convertAndSend(activeMQQueue,"aaa");
+        System.out.println("send success");
     }
 
 }

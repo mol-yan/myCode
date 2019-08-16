@@ -64,10 +64,10 @@ public class ActiveMQ4Config {
     @Bean//这里是p2p的，因为是queue,在这边可以改成topic
     public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory,ActiveMQQueue queue){
         JmsTemplate jmsTemplate=new JmsTemplate();
-        jmsTemplate.setDeliveryMode(2);//进行持久化配置 1表示非持久化，2表示持久化
+        jmsTemplate.setDeliveryMode(1);//进行持久化配置 1表示非持久化，2表示持久化
         jmsTemplate.setConnectionFactory(activeMQConnectionFactory);
         jmsTemplate.setDefaultDestination(queue); //此处可不设置默认，在发送消息时也可设置队列
-        jmsTemplate.setSessionAcknowledgeMode(4);//客户端签收模式
+        jmsTemplate.setSessionAcknowledgeMode(3);//客户端签收模式
         return jmsTemplate;
     }
 

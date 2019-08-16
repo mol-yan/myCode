@@ -15,7 +15,7 @@ public class Consumer {
     private final static Logger logger = LoggerFactory
             .getLogger(Consumer.class);
     //containerFactory负责设置签收以及事务
-    @JmsListener(destination = "${myqueue}", containerFactory = "jmsQueueListener")
+//    @JmsListener(destination = "${myqueue}", containerFactory = "jmsQueueListener")
     public void receiveQueue(final TextMessage text, Session session) throws JMSException {
         try {
             logger.info("Consumer收到的报文为:" + text.getText());

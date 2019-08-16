@@ -1,13 +1,14 @@
 #tcp://172.28.19.97:61616
 spring:
   activemq:
-    broker-url: nio://localhost:61608
+#    broker-url: nio://localhost:61608
+    broker-url: tcp://172.28.19.97:61616
     close-timeout:  18s
     user: admin
     password: admin
 
   jms:
-    pub-sub-domain: true
+    pub-sub-domain: false
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -16,4 +17,4 @@ spring:
     url: jdbc:mysql://localhost:3306/pritise?characterEncoding=utf-8
 
 
-myqueue: boot-active-queue
+myqueue: queue_deviceserver_to_devicebp
