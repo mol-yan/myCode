@@ -7,6 +7,8 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.hangyan.tokenstudy.annotation.PassToken;
 import com.hangyan.tokenstudy.annotation.UserLoginToken;
 import com.hangyan.tokenstudy.bo.User;
+import com.hangyan.tokenstudy.constans.TokenErroeCodeEnum;
+import com.hangyan.tokenstudy.expection.TokenExpection;
 import com.hangyan.tokenstudy.service.IuserDao;
 import com.hangyan.tokenstudy.tokenUtil.TokenUse;
 import lombok.extern.slf4j.Slf4j;
@@ -53,21 +55,24 @@ public class SessionInterceptor implements HandlerInterceptor {
                 // 在拦截器里根据redis拿出token对比看在不在redis中。
 
                 if (token == null) {
-                    throw new RuntimeException("无token，请重新登录");
+                    throw new TokenExpection(TokenErroeCodeEnum.NOT_FIND_TOKEN, "无token，请重新登录");
+//                    throw new RuntimeException("无token，请重新登录");
                 }
                 // 获取 token 中的 user id
-                String userId;
+                String userId = "";
                 try {
 //                    userId = JWT.decode(token).getAudience().get(0);
                     userId = TokenUse.getUserID(token);
                 } catch (JWTDecodeException j) {
-                    throw new RuntimeException("401");
+                    throw new TokenExpection(TokenErroeCodeEnum.VERTY_FAILED, "验证失败");
+//                    throw new RuntimeException("401");
                 }
                 log.info("验证解密userid: " + userId);
 
                 User user = iuserDao.findUserById(userId);
                 if (user == null) {
-                    throw new RuntimeException("用户不存在，请重新登录");
+                    throw new TokenExpection(TokenErroeCodeEnum.NOT_FIND_USER, "用户不存在，请重新登录");
+//                    throw new RuntimeException("用户不存在，请重新登录");
                 }
                 // 验证 token
                 JWTVerifier jwtVerifier = TokenUse.tokenVerify("fde35b32-0f47-46be-ae2a-49bcb7ed7d7f");
@@ -75,7 +80,10 @@ public class SessionInterceptor implements HandlerInterceptor {
                 try {
                     jwtVerifier.verify(token);
                 } catch (JWTVerificationException e) {
-                    throw new RuntimeException("401");
+                    throw new TokenExpection(TokenErroeCodeEnum.VERTY_FAILED);
+
+//                    throw new RuntimeException("401");
+
                 }
                 return true;
             }
