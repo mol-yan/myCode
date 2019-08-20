@@ -52,8 +52,6 @@ public class SessionInterceptor implements HandlerInterceptor {
                 //还有其他的验证方法，比如第一次注册时用把用户Id和token结合，然后放入redis中，
                 // 在拦截器里根据redis拿出token对比看在不在redis中。
 
-
-
                 if (token == null) {
                     throw new RuntimeException("无token，请重新登录");
                 }

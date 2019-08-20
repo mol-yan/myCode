@@ -2,30 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ab4b5b-765b-4e33-be1a-6ed1e16ca90d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/annotation/PassToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/annotation/UserLoginToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/bo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../token-authentication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/token-authentication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/TokenAuthenticationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/annotation/AuthToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/configuration/WebAppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/controller/welcome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/interceptor/AuthorizationInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/model/ResponseTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/utils/ConstantKit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/utils/Md5TokenGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/java/com/scorpios/tokenauthentication/utils/TokenGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/resources/mybatis/Mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token-authentication/token-authentication-master/src/test/java/com/scorpios/tokenauthentication/TokenAuthenticationApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/SessionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/SessionInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/main_application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/main_application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/service/IuserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/service/IuserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/service/Mapper/userDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/service/Mapper/userDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/tokenUtil/TokenUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/tokenUtil/TokenUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/controller/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/controller/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/controller/SessionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/interceptor/SessionInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/interceptor/SessionInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/interceptor/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/interceptor/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/service/IuserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/service/IuserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/service/Mapper/userDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/service/Mapper/userDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/tokenUtil/TokenUse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hangyan/tokenstudy/tokenUtil/TokenUse.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/main_application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/Login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1628#1629#0" expanded="true" />
@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/SessionInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#postHandle#0;class#SessionInterceptor#0" />
@@ -110,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,11 +219,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="475" />
-    <option name="y" value="31" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="108" />
+    <option name="y" value="120" />
     <option name="width" value="1722" />
-    <option name="height" value="1043" />
+    <option name="height" value="978" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -344,7 +344,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redis_study" />
+    <property name="last_opened_file_path" value="E:/jwt-demo-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -401,12 +401,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566180187045</updated>
       <workItem from="1566180189567" duration="16800000" />
-      <workItem from="1566216247137" duration="30755000" />
+      <workItem from="1566216247137" duration="31394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47555000" />
+    <option name="totallyTimeSpent" value="48194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -814,7 +814,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/SessionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -841,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1628#1629#0" expanded="true" />
@@ -853,7 +853,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/main_application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -883,7 +883,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hangyan/tokenstudy/interceptor/SessionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#postHandle#0;class#SessionInterceptor#0" />
