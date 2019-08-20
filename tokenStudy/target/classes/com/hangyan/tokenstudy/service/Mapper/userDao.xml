@@ -3,13 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hangyan.tokenstudy.service.IuserDao">
-    <select id="userLogin" resultType="java.lang.String">
+    <select id="getPasswd" resultType="java.lang.String">
         SELECT passwd
         FROM User
-
         where
         <if  test="userCode!=null" >
         username=#{userCode} </if>
+    </select>
+    <select id="findUserById" resultType="com.hangyan.tokenstudy.bo.User" parameterType="java.lang.String">
+        select *
+        from user
+        where userid=#{Id}
     </select>
 
 </mapper>

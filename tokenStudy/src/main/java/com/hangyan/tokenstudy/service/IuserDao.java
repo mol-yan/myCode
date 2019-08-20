@@ -1,11 +1,15 @@
 package com.hangyan.tokenstudy.service;
 
+import com.hangyan.tokenstudy.bo.User;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public interface IuserDao {
 
-     String userLogin(@Param(value = "userCode") String userCode);
+     String getPasswd(@Param(value = "userCode") String userCode);
+     User findUserById(String Id);
 
 }

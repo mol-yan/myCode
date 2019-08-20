@@ -4,6 +4,7 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import com.hangyan.tokenstudy.bo.User;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
@@ -23,7 +24,7 @@ public class TokenUse {
      * @param userId
      * @return
      */
-    public static String sign(String userCode) {
+    public static String sign(User user) {
         try {
             //设置过期时间
             Date date = new Date(System.currentTimeMillis() + overdeuTime);
@@ -35,12 +36,15 @@ public class TokenUse {
             requestHender.put("encryption", "HS256");
             long date1 = new Date().getTime();
 
-            //返回带有用户信息的签名
+            //返回带有用户信息的签名,.withClaim表示存放沟通信息payload，withHeader存放头，sign签名算法，withExpiresAt有效期
             return JWT.create().withHeader(requestHender)
-                    .withClaim("userCode", userCode)
-                    .withClaim("signTime", date1)
+                    .withClaim("username",user.getUsername())
+                    .withClaim("userid",user.getUserid())
+                    .withClaim("passwd",user.getPasswd())
+                    .withClaim("sign_time", date1)
                     .withExpiresAt(date)
                     .sign(algorithm);
+
         } catch (UnsupportedEncodingException e) {
             return null;
         }
@@ -52,16 +56,13 @@ public class TokenUse {
      * @param token
      * @return
      */
-    public static boolean tokenVerify(String token) {
-        try {
+    public static JWTVerifier tokenVerify(String tokenSecRet) throws UnsupportedEncodingException {
+
             Algorithm algorithm = Algorithm.HMAC256(tokenSecRet);
             JWTVerifier verifier = JWT.require(algorithm).build();
-            //验证
-            DecodedJWT decodedJWT = verifier.verify(token);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+//            DecodedJWT decodedJWT = verifier.verify(token);
+            return verifier;
+
     }
 
     /**
@@ -70,8 +71,8 @@ public class TokenUse {
      * @param token
      * @return
      */
-    public static int getUserID(String token) {
+    public static String getUserID(String token) {
         DecodedJWT decodedJWT = JWT.decode(token);
-        return decodedJWT.getClaim("userId").asInt();
+        return decodedJWT.getClaim("userid").asString();
     }
 }

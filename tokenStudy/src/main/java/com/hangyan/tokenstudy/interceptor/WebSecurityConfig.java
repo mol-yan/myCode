@@ -4,17 +4,22 @@ package com.hangyan.tokenstudy.interceptor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 public class WebSecurityConfig extends WebMvcConfigurationSupport{
 
+
+    @Bean
+    public HandlerInterceptor getTokenInterceptor(){
+        return new SessionInterceptor();
+    }
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new SessionInterceptor()).addPathPatterns("/**").excludePathPatterns("/login/{userCode}/{password}","/addSession","/getSession","/addCookie","/getCookie");
+        registry.addInterceptor(getTokenInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
     /**
