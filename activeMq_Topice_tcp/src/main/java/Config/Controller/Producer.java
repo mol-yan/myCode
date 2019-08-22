@@ -48,9 +48,9 @@ public class Producer {
     public void sendDeviceOnlineMessage(DeviceOnline deviceOnline) {
 
         jmsTemplate.setMessageConverter(messageConverter);
-        jmsTemplate.convertAndSend("aaaa");
+//        jmsTemplate.convertAndSend("aaaa");
         jmsTemplate.convertAndSend(activeMQQueue, JacksonUtils.toJson(deviceOnline));
-        System.out.println("send success");
+        System.out.println("send success to bp");
     }
 
     public void sendTextMessage(final String msg) {

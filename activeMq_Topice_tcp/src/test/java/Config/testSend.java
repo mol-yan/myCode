@@ -22,16 +22,18 @@ public class testSend {
     public void send()
     {
         DeviceOnline deviceOnline = new DeviceOnline();
-        deviceOnline.setCmdType("SET_WIFI_SSID_ONOFF");
-        deviceOnline.setPluginName("WifiConfig");
-        deviceOnline.setType("Report");
-        deviceOnline.setRpcMethod("Set");
+        deviceOnline.setCmdType("REPORT_LAN_DEVICE_ONLINE");
+        deviceOnline.setSequenceId("FFFFFFFF");
+        deviceOnline.setPluginName("LanDeviceConfig");
+        deviceOnline.setType("report");
+        deviceOnline.setRpcMethod("Get");
 
         DeviceOnline.Parameter parameter = new DeviceOnline.Parameter();
         parameter.setDeviceMac("333");
         parameter.setMac("234");
         parameter.setDeviceName("abc");
         parameter.setDhcpName("aaa");
+
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //        parameter.setUpTime(sdf.parse("2014-07-26-13:23:55"));
         parameter.setIp("192.168.1.1");
