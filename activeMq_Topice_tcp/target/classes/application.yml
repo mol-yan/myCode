@@ -11,4 +11,4 @@ spring:
     pub-sub-domain: false
 
 
-myqueue: queue_deviceserver_to_devicebp
+myqueue: queue_deviceserver_report_devicebp

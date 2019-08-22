@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b683465-ab66-4046-a077-f5b0e0cee38c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Bean/Mess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/MQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/ConfigBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Controller/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Controller/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Controller/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Controller/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/java/Config/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/ConfigBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Controller/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Controller/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Controller/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Controller/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/Config/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../activeMq_Topice_tcp/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Config/ActiveMQ4Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Controller/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/java/Com/hangyan/Controller/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/test/java/Com/hangyan/Controller/TestMq.java" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/src/test/java/Com/hangyan/Controller/TestMq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Config/ActiveMQ4Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Config/ActiveMQ4Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Controller/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/Com/hangyan/Controller/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/test-classes/Com/hangyan/Controller/TestMq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../active_mq_zonghe_importent/target/test-classes/Com/hangyan/Controller/TestMq.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springActiveMq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springActiveMq/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tokenStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tokenStudy/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ProduceServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/producer.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="171">
               <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
@@ -74,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ProducerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="171">
               <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
             </state>
           </provider>
@@ -148,6 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,11 +151,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -185,7 +169,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../activeMq_Topice_tcp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -230,17 +214,17 @@
       <updated>1563760743974</updated>
       <workItem from="1563760748309" duration="1558000" />
       <workItem from="1565919977749" duration="52000" />
+      <workItem from="1566454921771" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1610000" />
+    <option name="totallyTimeSpent" value="1625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -261,7 +245,6 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3280142" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="RestServices" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -271,6 +254,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="RestServices" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,16 +268,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/producer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ProducerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="171">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
@@ -308,10 +285,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ProduceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/producer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>

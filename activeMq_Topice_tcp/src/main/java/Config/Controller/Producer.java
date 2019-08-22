@@ -1,21 +1,22 @@
 package Config.Controller;
 
+import Config.JacksonUtils;
+import bo.DeviceOnline;
 import org.apache.activemq.command.ActiveMQQueue;
-import org.apache.activemq.command.ActiveMQTopic;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import javax.jms.*;
-import java.io.Serializable;
 
 @Component
 public class Producer {
     //config文件中类型是JmsTemplate，但是JmsMessagingTemplate一样能自动装配到
+    @Resource
+    MessageConverter messageConverter;
 
     @Resource
     private JmsMessagingTemplate jmsMessagingTemplate;
@@ -44,6 +45,14 @@ public class Producer {
     }
 
 
+    public void sendDeviceOnlineMessage(DeviceOnline deviceOnline) {
+
+        jmsTemplate.setMessageConverter(messageConverter);
+        jmsTemplate.convertAndSend("aaaa");
+        jmsTemplate.convertAndSend(activeMQQueue, JacksonUtils.toJson(deviceOnline));
+        System.out.println("send success");
+    }
+
     public void sendTextMessage(final String msg) {
         System.out.println("jmsTemplate model:");
         System.out.println(jmsTemplate.getDeliveryMode());
@@ -51,7 +60,7 @@ public class Producer {
 
             public Message createMessage(Session session) throws JMSException {
 
-                TextMessage textMessage= session.createTextMessage(msg);
+                TextMessage textMessage= session.createTextMessage(String.valueOf(msg));
                 textMessage.setJMSType("TextMessage");
                 return textMessage;
             }

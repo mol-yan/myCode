@@ -1,6 +1,6 @@
 package Config;
 
-import javax.jms.Queue;
+import javax.jms.*;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.RedeliveryPolicy;
@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.support.converter.MessageConversionException;
+import org.springframework.jms.support.converter.MessageConverter;
 /*
 AUTO_ACKNOWLEDGE = 1    自动确认
 CLIENT_ACKNOWLEDGE = 2    客户端手动确认   
@@ -83,6 +85,24 @@ public class MQConfig {
             factory.setSessionAcknowledgeMode(4);
             return factory;
         }
+
+    @Bean
+    public MessageConverter messageConverter() {
+        return new MessageConverter() {
+
+            public Message toMessage(Object object, Session session) throws JMSException, MessageConversionException {
+                Message message = session.createTextMessage((String)object);
+                message.setJMSType("TextMessage");
+                return message;
+            }
+
+
+            public Object fromMessage(Message message) throws JMSException, MessageConversionException {
+                TextMessage textMessage = (TextMessage) message;
+                return textMessage.getText();
+            }
+        };
+    }
 
     }
 
